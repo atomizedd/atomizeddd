@@ -107,7 +107,7 @@ ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 local MainFrame = Instance.new("Frame")
 MainFrame.Size = UDim2.new(0, 220, 0, 190)
 MainFrame.Position = UDim2.new(0.5, -110, 0.5, -95)
-MainFrame.BackgroundColor3 = Color3.fromRGB(204, 0, 0) -- Light brown
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Light brown
 MainFrame.BorderSizePixel = 0
 MainFrame.Parent = ScreenGui
 
@@ -121,7 +121,7 @@ Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Position = UDim2.new(0, 0, 0, 0)
 Title.Text = "Super Ring Parts v4"
 Title.TextColor3 = Color3.fromRGB(153, 0, 0) -- Dark brown
-Title.BackgroundColor3 = Color3.fromRGB(255, 51, 51) -- Lighter brown
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Lighter brown
 Title.Font = Enum.Font.Fondamento -- More elegant font
 Title.TextSize = 22
 Title.Parent = MainFrame
@@ -135,7 +135,7 @@ local ToggleButton = Instance.new("TextButton")
 ToggleButton.Size = UDim2.new(0.8, 0, 0, 35)
 ToggleButton.Position = UDim2.new(0.1, 0, 0.3, 0)
 ToggleButton.Text = "Ring Parts Off"
-ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButton.Font = Enum.Font.Fondamento
 ToggleButton.TextSize = 18
@@ -206,7 +206,7 @@ local MinimizeButton = Instance.new("TextButton")
 MinimizeButton.Size = UDim2.new(0, 30, 0, 30)
 MinimizeButton.Position = UDim2.new(1, -35, 0, 5)
 MinimizeButton.Text = "-"
-MinimizeButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255) -- Saddle brown
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(128,128,128) -- Saddle brown
 MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cornsilk
 MinimizeButton.Font = Enum.Font.Fondamento
 MinimizeButton.TextSize = 18
@@ -375,7 +375,7 @@ end)
 ToggleButton.MouseButton1Click:Connect(function()
     ringPartsEnabled = not ringPartsEnabled
     ToggleButton.Text = ringPartsEnabled and "Ring Parts On" or "Ring Parts Off"
-    ToggleButton.BackgroundColor3 = ringPartsEnabled and Color3.fromRGB(50, 205, 50) or Color3.fromRGB(160, 82, 45)
+    ToggleButton.BackgroundColor3 = ringPartsEnabled and Color3.fromRGB(128,128,128) or Color3.fromRGB(128,128,128)
     playSound("12221967")
 end)
 
