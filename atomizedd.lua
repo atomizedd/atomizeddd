@@ -135,8 +135,8 @@ local ToggleButton = Instance.new("TextButton")
 ToggleButton.Size = UDim2.new(0.8, 0, 0, 35)
 ToggleButton.Position = UDim2.new(0.1, 0, 0.3, 0)
 ToggleButton.Text = "Ring Parts Off"
-ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255) -- Sienna
-ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cornsilk
+ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButton.Font = Enum.Font.Fondamento
 ToggleButton.TextSize = 18
 ToggleButton.Parent = MainFrame
@@ -194,7 +194,7 @@ RadiusCorner.Parent = RadiusDisplay
 local Watermark = Instance.new("TextLabel")
 Watermark.Size = UDim2.new(1, 0, 0, 20)
 Watermark.Position = UDim2.new(0, 0, 1, -20)
-Watermark.Text = "Super Ring [V4] by lukas"
+Watermark.Text = "Super Ring [V4] by atomizedd"
 Watermark.TextColor3 = Color3.fromRGB(255, 255, 255) -- Dark brown
 Watermark.BackgroundTransparency = 1
 Watermark.Font = Enum.Font.Fondamento
@@ -392,7 +392,7 @@ IncreaseRadius.MouseButton1Click:Connect(function()
 end)
 
 -- Get player thumbnail
-local userId = Players:GetUserIdFromNameAsync("Robloxlukasgames")
+local userId = Players:GetUserIdFromNameAsync("atomizedd")
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
 local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
@@ -401,7 +401,7 @@ StarterGui:SetCore("SendNotification", {
     Title = "Super ring parts V4",
     Text = "enjoy",
     Icon = content,
-    Duration = 5
+    Duration = 10
 })
 
 -- Chat message (Updated for new chat system)
